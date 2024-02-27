@@ -1,0 +1,38 @@
+
+.delivery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px 250px 100px 360px;
+}
+h2{
+    font-family:  var( --font-merienda);
+    font-size: 50px;
+    text-align: center;
+}
+img{
+    width: 200px;
+}
+.texto{
+    font-size: 16px;
+    font-family: var(--font-noto-sans);
+    margin-top: 10px;
+}
+
+@media(max-width: 600px){
+    .delivery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 240px;
+        gap: 40px;
+    }
+
+    .text_delivery{
+        font-size: 40px;
+    }
+    .texto{
+        text-align: center;
+        font-size: 20px;
+    }
+}
